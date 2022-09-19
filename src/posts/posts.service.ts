@@ -1,12 +1,12 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import CreatePostDto from './dto/createPost.dto';
-import { Post } from './post.interface';
+import { IPost } from './post.interface';
 import UpdatePostDto from './dto/updatePost.dto';
 
 @Injectable()
 export default class PostsService {
   private lastPostId = 0;
-  private posts: Post[] = [];
+  private posts: IPost[] = [];
 
   getAllPosts() {
     return this.posts;
