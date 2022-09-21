@@ -19,6 +19,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "typeorm": "typeorm-ts-node-esm",
     "migrate:create": "ts-node ./node_modules/typeorm/cli.js migration:create -n",
     "migrate:up": "ts-node ./node_modules/typeorm/cli.js migration:run",
     "migrate:down": "ts-node ./node_modules/typeorm/cli.js migration:revert"
@@ -29,6 +30,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.1.0",
     "@nestjs/typeorm": "^9.0.1",
+    "class-transformer": "^0.5.1",
     "pg": "^8.8.0",
     "postgres": "^3.2.4",
     "reflect-metadata": "^0.1.13",
